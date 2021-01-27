@@ -161,20 +161,21 @@ a {
 
 /* LANDING */
 
-.full-page {
+
+/* .full-page {
     height: 100vh;
-}
+} */
 
 .landing {
     /* margin: auto; */
-    /* margin-top: 120px; */
+    margin-top: 200px;
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    transform: translateY(40%);
-    position: relative;
+    /* align-items: center; */
+    /* transform: translateY(40%); */
+    /* position: relative; */
 }
 
 .landing-info {
