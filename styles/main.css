@@ -161,6 +161,10 @@ a {
 
 /* LANDING */
 
+.full-page {
+    height: 100vh;
+}
+
 .landing {
     /* margin: auto; */
     /* margin-top: 120px; */
@@ -169,8 +173,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* transform: translateY(-8%); */
-    height: 100vh;
+    transform: translateY(40%);
+    position: relative;
 }
 
 .landing-info {
