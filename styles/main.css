@@ -81,6 +81,10 @@ a {
     justify-content: space-between;
 }
 
+.logo {
+    animation: menu-links-animation 0.4s ease-in;
+}
+
 .mobile-menu {
     display: none;
 }
@@ -96,6 +100,38 @@ a {
 .menu-links ul li {
     display: inline-block;
     margin-left: 5px;
+    z-index: 3;
+}
+
+.menu-links ul li:nth-child(1) {
+    animation: menu-links-animation 0.6s ease-in;
+    animation-iteration-count: 1;
+}
+
+.menu-links ul li:nth-child(2) {
+    animation: menu-links-animation 0.7s ease-in;
+}
+
+.menu-links ul li:nth-child(3) {
+    animation: menu-links-animation 0.8s ease-in;
+}
+
+.menu-links ul li:nth-child(4) {
+    animation: menu-links-animation 0.9s ease-in;
+}
+
+@keyframes menu-links-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 .std-btn {
@@ -127,11 +163,18 @@ a {
 
 .landing {
     /* margin: auto; */
-    margin-top: 120px;
+    /* margin-top: 120px; */
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    /* transform: translateY(-8%); */
+    height: 100vh;
+}
+
+.landing-info {
+    transform: translateY(-15%);
 }
 
 @media only screen and (min-width: 2000px) {
@@ -145,26 +188,31 @@ a {
     margin-top: 20px;
     color: var(--main-clr);
     animation-delay: 300ms;
+    animation: landing-animation 1.4s ease-in;
 }
 
 .name {
     font-size: 100px;
     font-weight: 600;
     color: var(--blite);
+    animation: landing-animation 1.6s ease-in;
 }
 
 .desc {
     margin-top: 20px;
     color: #eee;
     width: 60%;
+    animation: landing-animation 1.8s ease-in;
 }
 
 .continue-reading {
     margin-top: 30px;
+    animation: landing-animation 2s ease-in;
 }
 
 .connect {
     margin-left: 0px;
+    animation: landing-animation 2.2s ease-in;
 }
 
 .connect ul li {
@@ -202,15 +250,45 @@ a {
     transition: 1s ease;
 }
 
+@keyframes landing-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
 .landing-img img {
     max-width: 100%;
+    transform: translateY(-12%);
+    animation: landing-img-animation 1s ease-in;
+}
+
+@keyframes landing-img-animation {
+    0% {
+        opacity: 0;
+        transform: translate(-100%, -12%);
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0%, -12%);
+    }
 }
 
 
 /* ABOUT */
 
 #about-start {
-    height: 180px;
+    height: 100px;
 }
 
 .about {
