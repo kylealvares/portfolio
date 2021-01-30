@@ -521,3 +521,13 @@ a {
     font-size: 14px;
     color: grey;
 }
+
+.bottom a {
+    color: var(--blite);
+    transition: 0.4s ease;
+}
+
+.bottom a:hover {
+    color: var(--main-clr);
+    transition: 0.4s ease;
+}
