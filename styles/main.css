@@ -302,6 +302,7 @@ a {
     display: inline-flex;
     justify-content: center;
     max-height: fit-content;
+    animation: landing-animation 2.4s ease-in;
 }
 
 .about-img img {
