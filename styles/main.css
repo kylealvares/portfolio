@@ -57,11 +57,13 @@ body {
 }
 
 .p-svg path:nth-child(1) {
+    /* fill: none; */
     animation: line-anim 3s ease-in-out forwards 0s 1;
 }
 
 
 .p-svg path:nth-child(2) {
+    fill: none;
     animation: line-anim 3s ease-in-out forwards 220ms 1;
 }
 
