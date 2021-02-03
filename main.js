@@ -1,3 +1,10 @@
+const preloader = document.getElementById('preloader');
+const content = document.getElementById('content');
+setTimeout(() => {
+    preloader.style.display = 'none';
+    content.style.display = 'block';
+}, 3300);
+
 const hamburger = document.getElementById('hamburger');
 const menu = document.getElementById('mobile-menu');
 

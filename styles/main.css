@@ -37,6 +37,58 @@ body {
     color: white;
 }
 
+#content {
+    display: none;
+}
+
+.preloader {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-clr);
+}
+
+.p-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* padding: 100px; */
+}
+
+.p-svg path:nth-child(1) {
+    animation: line-anim 3s ease-in-out forwards 0s 1;
+}
+
+
+.p-svg path:nth-child(2) {
+    animation: line-anim 3s ease-in-out forwards 220ms 1;
+}
+
+@keyframes line-anim {
+    0% {
+        fill: transparent;
+        stroke: var(--main-clr);
+        stroke-width: 3px;
+        stroke-dashoffset: 0;
+        stroke-dasharray: 250;
+    }
+    40% {
+        stroke-width: 2px;
+    }
+    80% {
+        stroke-width: 1px;
+        fill: var(--main-clr);
+        stroke-dashoffset: 250;
+        stroke-dasharray: 50;
+        transform: rotate3d(1, 0, 0, 40deg);
+    }
+    100% {
+        fill: transparent;
+        stroke-width: 0px;
+    }
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -60,6 +112,7 @@ a {
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px 0 0 10px;
+    transition: 0.4 ease;
     -webkit-transition: 0.4s ease;
 }
 
@@ -232,6 +285,7 @@ a {
 }
 
 .ico {
+    transition: 0.4 ease;
     -webkit-transition: 1s ease;
 }
 
@@ -318,6 +372,7 @@ a {
     padding: 30px;
     max-height: 250px;
     max-width: 40%;
+    transition: 0.4 ease;
     -webkit-transition: 0.4s ease;
 }
 
@@ -339,6 +394,7 @@ a {
 }
 
 .in-text-link {
+    transition: 0.4 ease;
     -webkit-transition: 0.4s ease;
 }
 
@@ -398,6 +454,7 @@ a {
 }
 
 #planner {
+    transition: 0.4 ease;
     -webkit-transition: 0.4s ease;
     width: 700px;
 }
@@ -428,6 +485,7 @@ a {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     filter: drop-shadow(0px 0px 5px black);
+    transition: 0.4 ease;
     -webkit-transition: 0.4s ease;
 }
 
@@ -439,6 +497,7 @@ a {
     max-width: 100%;
     margin-top: 0px;
     border-radius: 15px 15px 0 0;
+    transition: 0.4 ease;
     -webkit-transition: 0.4s ease;
     /* filter: grayscale(); */
 }
