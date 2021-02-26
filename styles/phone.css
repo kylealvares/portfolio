@@ -143,9 +143,14 @@ body {
     gap: 30px 20px;
 }
 
-.contact-mssg {
+.contact-mssg, .contact-input, .contact-area {
     width: 90%;
 }
+
+.contact-input, .contact-area {
+    font-size: 14px;
+}
+
 
 .contact-head {
     font-size: 15px;

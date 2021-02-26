@@ -543,7 +543,7 @@ a {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     border-radius: 10px;
 }
 
@@ -565,6 +565,58 @@ a {
     display: block;
     margin: auto;
     width: 80%;
+}
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-input {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    color: var(--blite);
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.4s ease;
+}
+
+.contact-input:hover {
+    border: 2px solid var(--main-clr);
+    transition: 0.4s ease;
+}
+
+.contact-area {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    color: var(--blite);
+    outline: none;
+    resize: none;
+    min-height: 120px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.4s ease;
+}
+
+.contact-area:hover, .contact-area:hover {
+    min-height: 200px;
+    border: 2px solid var(--main-clr);
+    transition: 0.4s ease;
+} 
+
+.contact-submit {
+    margin-top: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 0;
 }
 
 .hello {
